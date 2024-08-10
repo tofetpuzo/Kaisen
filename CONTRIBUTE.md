@@ -6,7 +6,7 @@
 
 $ git clone "https://github.com/tofetpuzo/Kaisen"
 
-# change directory
+#### change directory
 
 $ cd Kaisen
 
