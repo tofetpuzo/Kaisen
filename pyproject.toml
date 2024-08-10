@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "kaisen"
+version = "0.1.0"
+description = "Building software and devops"
+authors = ["tofetpuzo <tofet.femi@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+homepage = "https://github.com/tofetpuzo/Kaisen.git"
+repository = "https://github.com/tofetpuzo/Kaisen.git"
+documentation = "https://github.com/tofetpuzo/Kaisen.git"
+keywords = ["git", "hook", "githooks", "poetry"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Devops and Software Development",
+    "Topic :: Software Development"
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+toml = "^0.10.2"
+click = "^8.1.6"
+
+[tool.poetry.dev-dependencies]
+black = "^23.7.0"
+pytest = "^7.4.0"
+
+[tool.poetry.scripts]
+githooks = "poetry_githooks:cli"
+
+[tool.poetry.group.dev.dependencies]
+poetry-githooks = "^3.0.1"
+
+[tool.githooks]
+pre-commit = "black . --check"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
