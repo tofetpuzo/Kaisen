@@ -28,6 +28,7 @@ classifiers = [
 python = "^3.12"
 toml = "^0.10.2"
 click = "^8.1.6"
+pre-commit = "^3.8.0"
 
 [tool.poetry.dev-dependencies]
 black = "^23.7.0"
