@@ -25,3 +25,11 @@ repos:
     rev: 5.13.0
     hooks:
       - id: isort
+
+  - repo: local
+    hooks:
+      - id: run-pre-commit-on-all-files
+        name: Run pre-commit on all files
+        entry: pre-commit run --all-files
+        language: system
+        always_run: true
