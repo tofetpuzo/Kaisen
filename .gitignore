@@ -11,6 +11,7 @@
 */*/env/*/*/*/*/*/*/*/*/*
 */*/env/*/*/*/*/*/*/*/*/*/*
 */*/env
+venv/
 
 # ignore all environment files
 .env
@@ -156,6 +157,9 @@ __pycache__/*/*/*/*
 .github/*/*/*/*/*
 .github/*/*/*/*/*/*
 .github/*/*/*/*/*/*/*
+
+note.ipynb
+python-help.md
 
 # ignore library files
 */*/lib/*
