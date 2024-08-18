@@ -19,9 +19,3 @@ repos:
     rev: 5.0.4
     hooks:
       - id: flake8
-
-  # isort - sorting imports
-  - repo: https://github.com/pycqa/isort
-    rev: 5.13.0
-    hooks:
-      - id: isort

@@ -40,6 +40,10 @@ githooks = "poetry_githooks:cli"
 [tool.poetry.group.dev.dependencies]
 poetry-githooks = "^3.0.1"
 
+[tool.isort]
+profile = "black"
+line_length = 150
+
 [tool.githooks]
 pre-commit = "black . --check"
 
