@@ -1,7 +1,8 @@
 def sum_numbers(num1, num2):
-    sum = num1 + num2
-    print("Sum:", sum)
-    return sum
+    total = num1 + num2
+    return total 
 result = sum_numbers(20, 20)
+
+print("total is", result)
 
     
