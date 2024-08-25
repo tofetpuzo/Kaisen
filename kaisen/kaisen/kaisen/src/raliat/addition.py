@@ -4,5 +4,3 @@ def sum_numbers(num1, num2):
 result = sum_numbers(20, 20)
 
 print("total is", result)
-
-    

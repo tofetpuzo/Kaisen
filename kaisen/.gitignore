@@ -18,6 +18,7 @@ venv/
 .env.local
 .env.development
 .env.test
+.isort.cfg
 .env.production
 .env.staging
 .env.development.local
