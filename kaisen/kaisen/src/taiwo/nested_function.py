@@ -1,10 +1,10 @@
-def call(a,b):
+def add_sum(a,b):
     suml = a + b 
     return suml
-print(call(2,3))
+print(add_sum(2,3))
     
 def subtr(a,b,c):
-    d = call(a,b)
+    d = add_sum(a,b)
     total = d - c
     return total   
  
