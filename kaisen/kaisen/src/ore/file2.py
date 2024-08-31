@@ -1,6 +1,5 @@
-def add_result(a, b, c):
-    return  a + b - c
-def sub_result(a, b, c):
-    result = add_result(a, b, c)
-    print result
-sub_result(44, 5, 11)
+def subtract(a, b):
+    return a - b
+def add(a, b):
+    return a + b - subtract(a, b)
+print(subtract(121, 74))
