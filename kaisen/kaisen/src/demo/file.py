@@ -1,4 +1,6 @@
 # Add two numbers
+
+import socket
 from datetime import date as Date
 
 import requests
@@ -23,7 +25,7 @@ def take_input():
 
 # age of a person
 def age():
-    age = int(input("Enter your age: "))
+    age = int(input("Enter your user: "))
     if age < 18:
         print("You are a minor.")
     else:
@@ -36,10 +38,16 @@ def calculate_age():
 
     current_year = Date.today().year
     birth_year = current_year - age
-    return birth_year
+    print(type(birth_year))
+    return print(birth_year)
 
 
-# find information about an ip address
+def get_ip_address_all_users():
+    pass
+
+
+# person from a given ip address
+# www.giveawayoftheday.com › ip-address-lookup 345.34.5.5
 
 
 def ip_info():
@@ -66,9 +74,23 @@ def get_data():
     return response.json()["england-and-wales"]["events"]
 
 
+def get_ip_address_from_dns():
+    host = "www.google.com"
+
+    return socket.gethostbyname(host)
+
+
+print(get_ip_address_from_dns())
+
+
 if __name__ == "__main__":
-    # print(take_input())
-    # multiplication_table(5)
+    # take_input()
+    # multiplication_table(51)
+    # get_ip_address_all_users()
+    # age()
     # calculate_age()
     # print(get_data())
+    #
+    #
+    #
     print(ip_info())
