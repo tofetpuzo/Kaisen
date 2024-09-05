@@ -1,5 +1,5 @@
-list = ['television', 'radio', 'telephone', 'computer', 'mouse', 'keyboard', 'laptop', 'monitor', 'remote', 'hard-drive', 'momory', 'track-pad']
+listd = ['television', 'radio', 'telephone', 'computer', 'mouse', 'keyboard', 'laptop', 'monitor', 'remote', 'hard-drive', 'momory', 'track-pad']
 
-print(sorted(list))
+print(sorted(listd))
 
-print(sorted(list, reverse=True))
+print(sorted(listd, reverse=True))
