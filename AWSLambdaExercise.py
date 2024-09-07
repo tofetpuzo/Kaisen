@@ -10,6 +10,6 @@ def lambda_handler(event, context):
     contents = response['Body'].read()
     total_words = contents.split()
     print('The word count in the file ' ,object_key, ' is ' , len(total_words))
-    snsArn = 'arn:aws:s3:::awslambdaexercise/username94.txt'
+    snsArn = 'arn:aws:s3:::;ltysdc.c;h.txt'
     message = "The word count in the file "+object_key+" is " + str(len(total_words))
     response = sns.publish(TopicArn=snsArn,Message=message,Subject='Word Count Result')
