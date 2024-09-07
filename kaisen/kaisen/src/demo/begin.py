@@ -1,4 +1,5 @@
 # beginning with the first step
+
 num1 = 10
 num2 = 20
 
@@ -22,6 +23,8 @@ items = list()
 
 itemss = dict()
 item1 = {"smart": "phone"}
+# ["taiwo", num_shoes, num_shirts, num_shirts, quantity_shoes, quantity_shirts, quantity_pants]
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 items_people_bought = [
     "taiwo",
@@ -31,60 +34,60 @@ items_people_bought = [
     quantity_shoes,
     quantity_shirts,
     quantity_pants,
-    "ore",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
-    "raliat",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
-    "atinuke",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
-    "ray231",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
-    "adeola",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
-    "kayode",
-    num_shoes,
-    num_shirts,
-    num_pants,
-    quantity_shoes,
-    quantity_shirts,
-    quantity_pants,
+    # "ore",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
+    # "raliat",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
+    # "atinuke",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
+    # "ray231",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
+    # "adeola",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
+    # "kayode",
+    # num_shoes,
+    # num_shirts,
+    # num_pants,
+    # quantity_shoes,
+    # quantity_shirts,
+    # quantity_pants,
 ]
 
 
-items1 = {1: [], "price": 0, "quantity": bool, 2: "shoes"}
+# items1 = {1: [], "price": 0, "quantity": bool, 2: "shoes"}
 
 
-# data structures and algorithms
+# # data structures and algorithms
 
 
-print("num1 + num2 =", num2 - num1)
+# print("num1 + num2 =", num2 - num1)
 
-
+# 1. strings, int, float, boolean, list, dictionary, tuple, set
 # num1 + num2 = 30
 
 # operators are used to perform operations on variables and values
@@ -93,3 +96,7 @@ print("num1 + num2 =", num2 - num1)
 # multiplication operator
 # division operator
 # modulus operator - returns the remainder of a division 13 % 5 = 3
+
+# Accessing items in a list
+ite = ["taiwo", 10, 20, 30, 40, 50, 60, 70, 80, 90]
+print((ite))
