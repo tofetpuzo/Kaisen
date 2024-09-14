@@ -49,21 +49,24 @@ def get_ip_address_all_users():
 # person from a given ip address
 # www.giveawayoftheday.com › ip-address-lookup 345.34.5.5
 
+# 1. aiohttp 2. httpx 3. requests
+
 
 def ip_info():
-    ip_address = input("Enter an IP address : ")
-    response = requests.get(f"http://ip-api.com/json/{ip_address}")
+    country = input("Enter an IP address : ")
+    response = requests.get(f"http://ip-api.com/json/?fields=61439{country}")
     data = response.json()
-    print(f"IP: {data['query']}")
-    print(f"Country: {data['country']}")
-    print(f"City: {data['city']}")
-    print(f"Region: {data['regionName']}")
-    print(f"ISP: {data['isp']}")
-    print(f"ZIP: {data['zip']}")
-    print(f"Latitude: {data['lat']}")
-    print(f"Longitude: {data['lon']}")
-    print(f"Timezone: {data['timezone']}")
-    print(f"AS: {data['as']}")
+    print(data)
+    # print(f"IP: {data['query']}")
+    # print(f"Country: {data['country']}")
+    # print(f"City: {data['city']}")
+    # print(f"Region: {data['regionName']}")
+    # print(f"ISP: {data['isp']}")
+    # print(f"ZIP: {data['zip']}")
+    # print(f"Latitude: {data['lat']}")
+    # print(f"Longitude: {data['lon']}")
+    # print(f"Timezone: {data['timezone']}")
+    # print(f"AS: {data['as']}")
 
 
 # use request information from api
