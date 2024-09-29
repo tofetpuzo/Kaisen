@@ -24,7 +24,7 @@ items = list()
 itemss = dict()
 item1 = {"smart": "phone"}
 # ["taiwo", num_shoes, num_shirts, num_shirts, quantity_shoes, quantity_shirts, quantity_pants]
-# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ]
 
 items_people_bought = [
     "taiwo",
@@ -78,7 +78,27 @@ items_people_bought = [
     quantity_pants,
 ]
 # for
+# key -> value
+items_people_bought_dict = {
+    "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}},
+    "raymond": {"price": 2, "quantity": 2, "item": "shirts"},
+}
+# "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}} A
+# {"price": 1, "quantity": 1, "item": {"shoes", "shirts"} B
+# "quantity": 1, "item": {"shoes", "shirts"} C
+# print(items_people_bought_dict["teekay"]["price"])
+# print(items_people_bought_dict)
+# "shirts" A
+# item: {"shoes", "shirts"}
+# "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}},
 
+
+# print(items_people_bought[7])
+
+# item = [items_people_bought_dict]
+# print(type(items_people_bought_dict))
+# print(type(item))
+# print(item)
 
 # items1 = {1: [], "price": 0, "quantity": bool, 2: "shoes"}
 
@@ -102,4 +122,21 @@ items_people_bought = [
 # for everybody in items_people_bought:
 #     print(everybody)
 
-print(all(items_people_bought))
+
+no_of_boys = 12
+no_of_girls = 8
+no_present = 15
+
+
+def sum_of_pupils_in_class():
+    total_pupils = no_of_boys + no_of_girls
+    return total_pupils
+
+
+def sum_of_pupils_absents():
+    total_absents = sum_of_pupils_in_class() - no_present
+    return total_absents
+
+
+sum_of_pupils_in_class()
+print(sum_of_pupils_absents())
