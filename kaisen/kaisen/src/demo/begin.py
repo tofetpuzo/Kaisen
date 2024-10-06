@@ -80,9 +80,27 @@ items_people_bought = [
 # for
 # key -> value
 items_people_bought_dict = {
-    "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}},
+    "teekay": {
+        "price": 1,
+        "quantity": 1,
+        "item": {
+            "shoes": 1,
+            "shirts": 1,
+            "shirt_size": ["large"],
+            "shoe_size": {"large": 1},
+        },
+    },
     "raymond": {"price": 2, "quantity": 2, "item": "shirts"},
 }
+
+# assigment
+# 1. write a function that takes a dictionary and returns the first value of "item" key and also the last "item"
+# 2. Then add the values together. and return the value
+# 1, 1, ["large"], {"large": 1}
+
+print(items_people_bought_dict.get("teekay").get("item").values())
+
+
 # "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}} A
 # {"price": 1, "quantity": 1, "item": {"shoes", "shirts"} B
 # "quantity": 1, "item": {"shoes", "shirts"} C
@@ -91,8 +109,6 @@ items_people_bought_dict = {
 # "shirts" A
 # item: {"shoes", "shirts"}
 # "teekay": {"price": 1, "quantity": 1, "item": {"shoes", "shirts"}},
-
-
 # print(items_people_bought[7])
 
 # item = [items_people_bought_dict]
@@ -123,20 +139,20 @@ items_people_bought_dict = {
 #     print(everybody)
 
 
-no_of_boys = 12
-no_of_girls = 8
-no_present = 15
+# no_of_boys = 12
+# no_of_girls = 8
+# no_present = 15
 
 
-def sum_of_pupils_in_class():
-    total_pupils = no_of_boys + no_of_girls
-    return total_pupils
+# def sum_of_pupils_in_class():
+#     total_pupils = no_of_boys + no_of_girls
+#     return total_pupils
 
 
-def sum_of_pupils_absents():
-    total_absents = sum_of_pupils_in_class() - no_present
-    return total_absents
+# def sum_of_pupils_absents():
+#     total_absents = sum_of_pupils_in_class() - no_present
+#     return total_absents
 
 
-sum_of_pupils_in_class()
-print(sum_of_pupils_absents())
+# sum_of_pupils_in_class()
+# print(sum_of_pupils_absents())
